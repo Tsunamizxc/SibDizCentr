@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СибДезСервис</title>
+    <link rel="stylesheet" href="css/zero.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-topline">
+            <p>©"СибДезСервис". Все права защищены.</p>
+        </div>
+        <div class="container">
+            <div class="header__row">
+                <div class="header__row_logo">
+                    <a href="#main"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="header__row_tel">
+                    <a href="tel:89043242638"><img src="img/tel.png" alt="">+7 (904) 324-26-38</a>
+                    <p>Дежурный диспетчер</p>
+                </div>
+                <div class="header__row_links">
+                    <div class="header__links_adres">
+                        <a target="_blank" href="https://goo.gl/maps/5u4oZ7nxjEUKsuraA"><img src="img/hlocat.svg"
+                                alt="">г.Омск ул.Магистральная д.18</a>
+                    </div>
+                    <div class="header__links_time">
+                        <img src="img/htime.svg" alt="">
+                        <p>Круглосуточно</p>
+                    </div>
+                </div>
+                <div class="header__row_btn">
+                    <a href="#" id="openp">Оставить заявку</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header__menu">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="#main">ГЛАВНАЯ</a></li>
+                    <li><a href="#road">НАШИ НАПРАВЛЕНИЯ</a></li>
+                    <li><a href="#services">СТОИМОСТЬ УСЛУГ</a></li>
+                    <li><a href="#krut">ПРЕИМУЩЕСТВА</a></li>
+                    <li><a href="#fq">ЧАСТЫЕ ВОПРОСЫ</a></li>
+                    <li><a href="#rev">ОТЗЫВЫ</a></li>
+                    <li><a href="#contact">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a href="#main" class="menu__item"><img src="img/logo.png" alt=""></a></li>
+                <li><a href="#main" class="menu__item">ГЛАВНАЯ</a></li>
+                <li><a href="#road" class="menu__item">НАШИ НАПРАВЛЕНИЯ</a></li>
+                <li><a href="#services" class="menu__item">СТОИМОСТЬ УСЛУГ</a></li>
+                <li><a href="#krut" class="menu__item">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#fq" class="menu__item">ЧАСТЫЕ ВОПРОСЫ</a></li>
+                <li><a href="#rev" class="menu__item">ОТЗЫВЫ</a></li>
+                <li><a href="#contact" class="menu__item">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <div class="face" id="main">
+            <div class="container">
+                <div class="face__row">
+                    <div class="face__row_content">
+                        <div class="face__content_title">
+                            <h1>Уничтожение насекомых
+                                грызунов,микробов,запахов</h1>
+                        </div>
+                        <div class="face__content_discription">
+                            <p>Профессиональные услуги дезинсекции, дератизации, дезинфекции и дезодорации в Омске и
+                                Омской области.</p>
+                        </div>
+                        <div class="face__content_time">
+
+                            <div class="face__time_timer">
+
+                                <div id="countdown" class="countdown">
+
+                                    <div class="countdown__row">
+                                        <div class="face__time_title">
+                                            <H2>АКЦИЯ! ОСТАВИВ ЗАЯВКУ ЧЕРЕЗ САЙТ ГАРАНТИРУЕМ ВАМ СКИДКУ <span
+                                                    class="sale">
+                                                    25%</span></H2>
+                                        </div>
+                                        <h3>До конца акции осталось:</h3>
+                                        <div id="clockdiv">
+                                            <div class="table">
+                                                <span class="days" id="day"></span>
+                                                <div class="smalltext">Дней</div>
+                                            </div>
+                                            <div class="dots">:</div>
+                                            <div class="table">
+                                                <span class="hours" id="hour"></span>
+                                                <div class="smalltext">Часов</div>
+                                            </div>
+                                            <div class="dots">:</div>
+                                            <div class="table">
+                                                <span class="minutes" id="minute"></span>
+                                                <div class="smalltext">Минут</div>
+                                            </div>
+                                            <div class="dots">:</div>
+                                            <div class="table">
+                                                <span class="seconds" id="second"></span>
+                                                <div class="smalltext">Секунд</div>
+                                            </div>
+                                        </div>
+                                        <div class="face__time_btn">
+                                            <a href="#" id="openp">Оставить заявку</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="face__row_img">
+                        <img src="img/faceimg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs" id="road">
+            <div class="nav-tabsbg">
+                <div class="nav-tabs">
+                    <a href="#" data-tab="1" class="nav-tab active"><img src="img/clops.svg" alt="">
+                        <p>КЛОПЫ</p>
+                    </a>
+                    <a href="#" data-tab="2" class="nav-tab "><img src="img/tarak.svg" alt="">
+                        <p>ТАРАКАНЫ</p>
+                    </a>
+                    <a href="#" data-tab="3" class="nav-tab "><img src="img/bloh.svg" alt="">
+                        <p>БЛОХИ</p>
+                    </a>
+                    <a href="#" data-tab="4" class="nav-tab "><img src="img/klesh.svg" alt="">
+                        <p>КЛЕЩИ</p>
+                    </a>
+                    <a href="#" data-tab="5" class="nav-tab "><img src="img/mouse.svg" alt="">
+                        <p>ГРЫЗУНЫ</p>
+                    </a>
+                    <a href="#" data-tab="6" class="nav-tab "><img src="img/virus.svg" alt="">
+                        <p>МИКРОБЫ</p>
+                    </a>
+                    <a href="#" data-tab="7" class="nav-tab "><img src="img/zapah.svg" alt="">
+                        <p>ЗАПАХИ</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="tabs__row">
+                    <div class="tab-content">
+                        <div data-tab-content="1" class="tab-pane active">
+                            <div class="tabs__content_title">
+                                <h2>О ПОСТЕЛЬНЫХ КЛОПАХ</h2>
+                            </div>
+                            <div class="tabs__content_info">
+                                <ul>
+                                    <li><span class="title">Свойства:</span>  Эктопаразит, питается кровью человека
+                                        и животных. </li>
+                                    <li> <span class="title">Размеры:</span> от 3 до 9мм. </li>
+                                    <li><span class="title">Цвет:</span> Желтый, коричневый. </li>
+                                    <li><span class="title">Образ жизни:</span> Преимущественно ночной, скапливаются
+                                        поблизости с источником
+                                        пищи. </li>
+                                    <li><span class="title">Продолжительность жизни:</span>  12 - 14 месяцев. </li>
+                                    <li><span class="title">Размножение: </span>Самка откладывает до 5 яиц в сутки,
+                                        а в течении жизни от 250 до
+                                        500 яиц.
+                                        Цикл развития яйца составляет примерно 40 дней. </li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content_discription">
+                                <p>Людям постельный клоп опасен преимущественно своими укусами, из-за которых
+                                    человек лишается нормального сна и отдыха. Также постельные клопы могут являться
+                                    перенесчиками гепатита В, туберкулеза и брюшного тифа. Помимо психотравмирующего
+                                    фактора укусы клопов часто вызывают сыпь и аллергию. В зараженном помещении
+                                    человека за ночь могут укусить более 500 раз.</p>
+                            </div>
+                        </div>
+                        <div data-tab-content="2" class="tab-pane">
+                            <div class="tabs__content_title">
+                                <h2>О РЫЖИХ ТАРАКАНАХ</h2>
+                            </div>
+                            <div class="tabs__content_info">
+                                <ul>
+                                    <li><span class="title">Свойства:</span>   синатропный организм, всеяден. </li>
+                                    <li> <span class="title">Размеры:</span> от 10 до 16 мм. </li>
+                                    <li><span class="title">Цвет:</span>  различные оттенки коричневого с двумя
+                                        тёмными полосами. </li>
+                                    <li><span class="title">Образ жизни:</span>  преимущественно ночной,
+                                        скапливаются вблизи источника пищи и воды, а также в местах тепловыделения.
+                                    </li>
+                                    <li><span class="title">Продолжительность жизни:</span>   4 - 7 месяцев. </li>
+                                    <li><span class="title">Размножение: </span> самка откладывает 30 - 40 яиц в
+                                        оотеку каждые 2 - 3 недели. Цикл развития из яйца в особь составляет от 14
+                                        до 35 дней.</li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content_discription">
+                                <p>Людям тараканы опасны тем, что являются причиной распространения заболеваний
+                                    (гастроэнтерит, диарея, дизентерия и тд.) и аллергических реакций.</p>
+                            </div>
+                        </div>
+                        <div data-tab-content="3" class="tab-pane ">
+                            <div class="tabs__content_title">
+                                <h2>О БЛОХАХ</h2>
+                            </div>
+
+                            <div class="tabs__content_discription">
+                                <p class="low"> Этот вид селится в диффузных гнёздах, то есть таким образом, что
+                                    один муравейник
+                                    распределён по большой территории (обычно в пределах одного дома) в виде
+                                    множества
+                                    связанных друг с другом гнёзд. В каждом гнезде может быть несколько яйценесущих
+                                    самок. Когда условия в одном из гнёзд ухудшаются, муравьи мигрируют.
+                                    <br>
+                                    <br>
+
+                                    В квартире блохи живут в основном в коврах и паласах, иногда в мягкой мебели.
+                                    Большое скопление блох нередко наблюдается в подвалах. Если в квартире
+                                    присутствуют домашние животные, то вероятность заражения блохами квартиры
+                                    значительно выше.
+                                    <br>
+                                    <br>
+                                    Несмотря на расселение блох в квартире обычно не выше полуметра, при дезинсекции
+                                    необходимо обрабатывать квартиру комплексно, чтобы наверняка избавиться от
+                                    вредителя. Одновременно необходимо обработать домашних животных от блох.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div data-tab-content="4" class="tab-pane ">
+                            <div class="tabs__content_title">
+                                <h2>О КЛЕЩАХ</h2>
+                            </div>
+
+                            <div class="tabs__content_discription">
+                                <p class="low">Клещевой энцефалит (весенне-летний клещевой менингоэнцефалит) —
+                                    природно-очаговая
+                                    вирусная инфекция, характеризующаяся лихорадкой, интоксикацией и поражением
+                                    серого вещества головного мозга (энцефалит) и/или оболочек головного и спинного
+                                    мозга (менингит и менингоэнцефалит). Заболевание может привести к стойким
+                                    неврологическим и психиатрическим осложнениям и даже к смерти больного.</p>
+                            </div>
+                        </div>
+                        <div data-tab-content="5" class="tab-pane ">
+                            <div class="tabs__content_title">
+                                <h2>О МЫШАХ</h2>
+                            </div>
+
+                            <div class="tabs__content_discription">
+                                <p class="low">Чаще остальных используем 2 метода борьбы с грызунами: пищевые
+                                    ядхимикаты и
+                                    газообразные яды. Используем только профессиональные сертифицированные препараты
+                                    и оборудование. Пищевые ядхимикаты более деликатный способ, но используется при
+                                    небольшой численности вредителей. Мы используем специальные «кормушки», которые
+                                    служат защитой от контакта с ядхимикатом детей и домашних животных. Газообразные
+                                    яды наиболее эффективны при значительной популяции грызунов. Дает возможность
+                                    поразить популяцию сразу, а также добраться в самые труднодоступные места
+                                    (пространство под полом, вентиляция, пространство между стен, крыша).</p>
+                            </div>
+                        </div>
+                        <div data-tab-content="6" class="tab-pane ">
+                            <div class="tabs__content_title">
+                                <h2>О ДЕЗИНФЕКЦИИ</h2>
+                            </div>
+
+                            <div class="tabs__content_discription">
+                                <p class="low">Дезинфекция помещения от вирусов – это комплекс специальных
+                                    мероприятий,
+                                    выполнение которых ведет к глубокому обеззараживанию помещения, нормализации его
+                                    микроклимата. Используем при дезинфекции в соответствии с рекомендациями
+                                    Роспотребнадзора противовирусные дезинфицирующие препараты (на основе:
+                                    хлорактивных веществ, четвертичных аммониевых соединений, третичных аминов)
+                                    разительно отличаются от традиционной бытовой химии. Они способны справляться с
+                                    более широким кругом задач, зачастую обладают противогрибковым, противовирусным
+                                    и антибактериальным эффектом.</p>
+                            </div>
+                        </div>
+                        <div data-tab-content="7" class="tab-pane ">
+                            <div class="tabs__content_title">
+                                <h2>О ДЕЗОДАРАЦИИ</h2>
+                            </div>
+
+                            <div class="tabs__content_discription">
+                                <p class="alert" style="color: white;">
+                                    Для эффективной дезинфекции помещения следует учитывать последние коррективы и
+                                    рекомендации Роспотребнадзора по борьбе распространения COVID-19.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-img">
+                        <img src="img/tabs.png" alt="" data-aos="fade-left">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="services">
+            <div class="services-header">
+                <div class="container">
+                    <div class="services-header__row">
+                        <div class="services-header__row_content" data-aos="fade-right">
+                            <div class="services-header__content_title">
+                                <h2>СТОИМОСТЬ УСЛУГ</h2>
+                            </div>
+                            <div class="services-header__content_discription">
+                                <p>Актуальные цены и акции на услуги дезинсекции, дератизации, дезинфекции и
+                                    дезодорации.</p>
+                            </div>
+                        </div>
+                        <div class="services-header__row_img" data-aos="fade-left">
+                            <img src="img/usl.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="services__row">
+                    <div class="services__row_table" data-aos="fade-up">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ТИП ПОМЕЩЕНИЯ</th>
+                                    <th>ЦЕНА</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Моп(места общего пользования)</td>
+                                    <td>от 600 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Комната в общежитии</td>
+                                    <td>от 1200 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>1-комнатная квартира</td>
+                                    <td>от 1500 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2-х комнатная квартира</td>
+                                    <td>от 1800 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3-х комнатная квартира</td>
+                                    <td>от 2100 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Частные дома от 40 м2</td>
+                                    <td>от 1500₽</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="services__row_advantages" data-aos="fade-up">
+                        <div class="services__advantages_item">
+                            <img src="img/garant.png" alt="">
+                            <p>100% РЕЗУЛЬТАТ С 1 РАЗА</p>
+                        </div>
+                        <div class="services__advantages_item">
+                            <img src="img/time.png" alt="">
+                            <p>ГАРАНТИЯ 2 ГОДА</p>
+                        </div>
+                        <div class="services__advantages_item">
+                            <img src="img/people.png" alt="">
+                            <p>БЕЗОПАСНО ДЛЯ ЧЕЛОВЕКА И ЖИВОТНЫХ</p>
+                        </div>
+                        <div class="services__advantages_item">
+                            <img src="img/doc.png" alt="">
+                            <p>СТРОГО В СООТВЕТСТВИИ С САНПИН</p>
+                        </div>
+                        <div class="services__advantages_item">
+                            <img src="img/alert.png" alt="">
+                            <p>ТОЛЬКО СЕРТИФИЦИРОВАННЫЕ ПРЕПАРАТЫ</p>
+                        </div>
+                    </div>
+                    <div class="services__row_discount" data-aos="fade-up">
+                        <h4>Система скидок:</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Многодетным семьям </td>
+                                    <td><span class="discount">20%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Пенсионерам </td>
+                                    <td><span class="discount">20%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>При заказе обработки всей секции в общежитии
+                                    </td>
+                                    <td><span class="discount">20%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>При коллективном заказе от 3 квартир</td>
+                                    <td><span class="discount">20%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="abus" id="krut">
+            <div class="container">
+                <div class="abus__row">
+                    <div class="abus__row_title">
+                        <h2>ЧЕСТНЫЕ ЦЕНЫ, ГАРАНТИЯ И БЕЗОПАСНОСТЬ!</h2>
+                    </div>
+                    <div class="abus__row_text">
+                        <p>Городская служба дезинфекции — уже более 10 лет на рынке дизинфекционных услуг,
+                            высококвалифицированные специалисты и положительные отзывы довольных клиентов!
+                            <br>
+                            <br>
+                            Поддерживаем качество оказываемых услуг путём повышения навыков наших мастеров. Благодаря
+                            этому мы оказываем услуги на европейском уровне. В своей работе мы используем
+                            сертифицированные препараты, без едкого запаха и абсолютно безопасные для людей и животных.
+                        </p>
+                    </div>
+                    <div class="abus__row_title">
+                        <h2>ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ:</h2>
+                    </div>
+                    <div class="abus__row_text">
+                        <ul>
+                            <li><span class="title">Дезинсекция</span> - уничтожение насекомых в помещениях и на
+                                открытых площадях. </li>
+                            <br>
+                            <li><span class="title">Дератизация</span> - уничтожение грызунов в помещениях и на открытых
+                                площадях. </li>
+                            <br>
+                            <li><span class="title">Дезинфекция</span> - уничтожение возбудителей инфекционных
+                                заболеваний в помещениях.</li>
+                        </ul>
+                    </div>
+                    <div class="abus__row_img" data-aos="fade-left">
+                        <img src="img/abus.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dops">
+            <div class="container">
+                <div class="dops__row">
+                    <div class="dops__row_img" data-aos="fade-right">
+                        <img src="img/dops.png" alt="">
+                    </div>
+                    <div class="dops__row_columns">
+                        <div class="dops__column_item" data-aos="fade-left">
+                            <img src="img/calendar.svg" alt="">
+                            <p>РАБОТАЕМ С 2013 ГОДА</p>
+                        </div>
+                        <div class="dops__column_item" data-aos="fade-left">
+                            <img src="img/caution.svg" alt="">
+                            <p>БОЛЕЕ 50 ОБРАБОТОК В ДЕНЬ</p>
+                        </div>
+                        <div class="dops__column_item" data-aos="fade-left">
+                            <img src="img/handshake.svg" alt="">
+                            <p>БОЛЕЕ 150 ОРГАНИЗАЦИЙ НА ОБСЛУЖИВАНИИ</p>
+                        </div>
+                        <div class="dops__column_item" data-aos="fade-left">
+                            <img src="img/star.svg" alt="">
+                            <p>МЕНЕЕ 5% ПОВТОРНЫХ ОБРАБОТОК</p>
+                        </div>
+                        <div class="dops__column_item" data-aos="fade-left">
+                            <img src="img/bookmark.svg" alt="">
+                            <p>БОЛЕЕ 500 БЕСПЛАТНЫХ ОБРАБОТОК ЗА 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculation">
+            <div class="container">
+                <div class="calculation__row">
+                    <div class="calculation__row_text" data-aos="fade-right">
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litlecalendar.svg" alt="">
+                            <p>КРУГЛОСУТОЧНО 24/7</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/liltletime.svg" alt="">
+                            <p>СРОЧНЫЙ ВЫЕЗД В ТЕЧЕНИЕ 30 МИНУТ</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litlepencil.svg" alt="">
+                            <p>ОФИЦИАЛЬНО ПО ДОГОВОРУ</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litlehand.svg" alt="">
+                            <p>ГАРАНТИЯ 2 ГОДА</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litlepeople.svg" alt="">
+                            <p>БЕЗОПАСНО ДЛЯ ЧЕЛОВЕКА И ЖИВОТНЫХ</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litledoc.svg" alt="">
+                            <p>СТРОГО В СООТВЕТСТВИИ С САНПИН</p>
+                        </div>
+                        <div class="calculation__text_item" data-aos="fade-right">
+                            <img src="img/litlealert.svg" alt="">
+                            <p>ТОЛЬКО СЕРТИФИЦИРОВАННЫЕ ПРЕПАРАТЫ</p>
+                        </div>
+                    </div>
+                    <div class="calculation__row_form" data-aos="fade-left">
+                        <form class="SendMail" method="post" enctype="multipart/form-data">
+                             <input type="hidden" name="С блока" value="Рассчет стоимости обработки:">
+                            <div class="calculation__form_title">
+                                <h2>РАССЧИТАТЬ СТОИМОСТЬ ОБРАБОТКИ</h2>
+                            </div>
+                            <div class="calculation__form_contacts">
+                                <div class="calculation__contacts_name">
+                                    <label for="">Ваше имя:</label>
+                                    <input type="text" onkeypress="noDigits(event)" name="Имя:"  placeholder="Например Иван" required="">
+                                </div>
+                                <div class="calculation__contacts_phone">
+                                    <label for="">Телефон:</label>
+                                    <input name="Телефон:" type="phone" placeholder="+7 (999) 999-99-99" required="">
+                                </div>
+                            </div>
+                            <div class="calculation__form_services">
+                                <h2>Услуга:</h2>
+                                <p><select name="Услуга:">
+                                        <option value="Уничтожение клопов">Уничтожение клопов</option>
+                                        <option value="Уничтожение тараканов">Уничтожение тараканов</option>
+                                        <option value="Уничтожение блох">Уничтожение блох</option>
+                                        <option value="Уничтожение клещей">Уничтожение клещей</option>
+                                        <option value="Уничтожение грызунов">Уничтожение грызунов</option>
+                                        <option value="Уничтожение микробов">Уничтожение микробов</option>
+                                        <option value="Уничтожение запахов">Уничтожение запахов</option>
+                                    </select></p>
+                            </div>
+                            <div class="calculation__form_inputs">
+                                <label for="">Тип объекта:</label>
+                                <div class="calculation__inputs_row">
+                                    <div class="calculation__inputs_row-one">
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales1" value="Места общего пользования" name="Тип объекта:" >
+                                            <label for="scales1">Места общего пользования</label>
+                                        </div>
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales2" value="Комната в общежитии" name="Тип объекта:" >
+                                            <label for="scales2">Комната в общежитии</label>
+                                        </div>
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales3" value="Частные дома от 40 м2" name="Тип объекта:"  >
+                                            <label for="scales3">Частные дома от 40 м2</label>
+                                        </div>
+                                    </div>
+                                    <div class="calculation__inputs_row-two">
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales4" value="1-комнатная квартира" name="Тип объекта:" >
+                                            <label for="scales4">1-комнатная квартира</label>
+                                        </div>
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales5" value="2-х комнатная квартира" name="Тип объекта:" >
+                                            <label for="scales5">2-х комнатная квартира</label>
+                                        </div>
+                                        <div class="calculation__inputs_item">
+                                            <input type="radio" id="scales6" value="3-х комнатная квартира" name="Тип объекта:" >
+                                            <label for="scales6">3-х комнатная квартира</label>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="calculation__form_btn">
+                                <button>Рассчитать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accord" id="fq">
+
+            <div class="container">
+                <div class="accord__row">
+                    <div class="accord__row_accords">
+                        <div class="accord__accords_title">
+                            <h3>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h3>
+                        </div>
+                        <div class="accord__accords_container">
+                            <div class="box" data-aos="fade-right">
+                                <div class="label">Сколько времени занимает обработка?</div>
+                                <div class="content">
+                                    <p>
+                                        В среднем обработка квартиры с осмотром и работами занимает 1 час. </p>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-right">
+                                <div class="label">Безопасны ли препараты?</div>
+                                <div class="content">
+                                    <p>
+                                        Используются только сертифицированные препараты, которые полностью соответствуют
+                                        требованиям Роспотребнадзора. Они абсолютно безопасны для человека и домашних
+                                        животных, но губительны для насекомых и грызунов, а также предотвращают их
+                                        дальнейшее появление.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-right">
+                                <div class="label">Как подготовить помещение перед обработкой?</div>
+                                <div class="content">
+                                    <p>
+                                        Необходимо по возможности отодвинуть мебель от стен и плинтусов на 30 см, снять
+                                        постельное белье, упаковать в пакеты детские игрушки, убрать личные вещи.
+                                        Посуду, гигиенические принадлежности упаковать герметично или убрать. После
+                                        обработки промыть посуду, кухонные и гигиенические принадлежности тёплым мыльным
+                                        раствором.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-right">
+                                <div class="label">Поможет ли обработка? Через сколько дней исчезнут вредители?</div>
+                                <div class="content">
+                                    <p>
+                                        Эффективность обработки 99%. Вредители исчезают полностью через 10 дней. Первые
+                                        сутки после обработки возможно увеличение активности вредителей, в случае если
+                                        ранее они подвергались травлению и приобрели резистентность, необходимо немного
+                                        больше времени для действия препарата.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accord__row_form" data-aos="fade-up">
+                        <form class="SendMail" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="С блока" value="Остались вопросы?">
+                             <div class="accord__form_title">
+                            <h3>ОСТАЛИСЬ ВОПРОСЫ?
+                            </h3>
+                        </div>
+                        <div class="accord__form_discription">
+                            <p>
+                                Оставьте заявку и мы подробно Вас проконсультируем.
+                            </p>
+                        </div>
+                        <div class="accord__form_contacts">
+                            <div class="accord__contacts_phone">
+                                <label for="">Ваше имя:</label>
+                                <input type="text" onkeypress="noDigits(event)" name="Имя:" placeholder="Например Иван" required>
+                            </div>
+                            <div class="accord__contacts_phone">
+                                <label for="">Телефон:</label>
+                                <input type="phoness" name="Телефон:" placeholder="+7 (999) 999-99-99" required>
+                            </div>
+                        </div>
+                        <div class="accord__form_btn">
+                            <button>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                        </div>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accord__img">
+                <img src="img/faq.png" alt="">
+            </div>
+        </div>
+        <div class="reviews" data-aos="fade-down" id="rev">
+            <div class="container">
+                <div class="reviews__title">
+                    <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+                </div>
+                <div class="reviews__slider">
+                    <div class="slide">
+                        <div class="slide__title">
+                            <h3>Карина</h3>
+                            <a target="_blank"
+                                href="https://www.avito.ru/user/5e1cc353799bf7370af1ac828095ccca/profile/all/predlozheniya_uslug?id=3096071995&iid=3096071995&src=messenger&page_from=from_item_messenger&sellerId=5e1cc353799bf7370af1ac828095ccca">Отзыв
+                                с Avito</a>
+                        </div>
+                        <div class="slide__text">
+                            <p>В подсобных помещениях образовался целый клоповник, воспользовался услугами данной фирмы,
+                                сделали одну обработку , хотя я думал это не может, и спустя неделю я этой заразы не
+                                наблюдаю, обошлись без дополнительной обработки.Спасибо, эффективно.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__title">
+                            <h3>Диана</h3>
+                            <a target="_blank"
+                                href="https://www.avito.ru/user/5e1cc353799bf7370af1ac828095ccca/profile/all/predlozheniya_uslug?id=3096071995&iid=3096071995&src=messenger&page_from=from_item_messenger&sellerId=5e1cc353799bf7370af1ac828095ccca">Отзыв
+                                с Avito</a>
+                        </div>
+                        <div class="slide__text">
+                            <p>Очень понравилась работа! В помещении выполнили "Холодный туман".. Изначально я не знала
+                                что это, но после мне все объяснили и проконсультировали! Благодарю.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__title">
+                            <h3>Алина Алексеева</h3>
+                            <a target="_blank"
+                                href="https://www.avito.ru/user/5e1cc353799bf7370af1ac828095ccca/profile/all/predlozheniya_uslug?id=3096071995&iid=3096071995&src=messenger&page_from=from_item_messenger&sellerId=5e1cc353799bf7370af1ac828095ccca">Отзыв
+                                с Avito</a>
+                        </div>
+                        <div class="slide__text">
+                            <p>Отличная служба, оперативно прибыли на место,расправились с муравьями. Теперь и знать не
+                                знаем таких проблем,думаю,о муравьях мы забудем навсегда. Рекомендую!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts" id="contact">
+            <div class="container">
+                <div class="contacts__title">
+                    <h2>НАШИ КОНТАКТЫ</h2>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__row_content">
+                        <div class="contacts__content_columns">
+                            <div class="contacts__content_item" data-aos="fade-right">
+                                <h4>Адрес:</h4>
+                                <div class="content__item_link">
+                                    <a href="#"> г.Омск ул.Магистральная д.18</a>
+                                </div>
+                            </div>
+                            <div class="contacts__content_item" data-aos="fade-right">
+                                <h4>Телефон:</h4>
+                                <div class="content__item_link">
+                                    <a href="#">+7 (904) 324-26-38</a>
+                                </div>
+                            </div>
+                            <div class="contacts__content_item" data-aos="fade-right">
+                                <h4>График работы:</h4>
+                                <div class="content__item_link">
+                                    <a href="#"> Работаем круглосуточно Без выходных</a>
+                                </div>
+                            </div>
+                            <div class="contacts__content_item" data-aos="fade-right">
+                                <h4>Почта:</h4>
+                                <div class="content__item_link">
+                                    <a href="#"> SibDezServis@yandex.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts__content_item" data-aos="fade-right">
+                                <h4>Наши Соц.Сети:</h4>
+                                <div class="content__item_img">
+                                    <a href="#"><img src="img/vkwhite.svg" alt=""></a>
+                                    <a href="#"><img src="img/avitowhite.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__content_btn" data-aos="fade-up">
+                            <a href="#" id="openp">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__row_img" data-aos="fade-left">
+                        <img src="img/contacts.png" alt="">
+                    </div>
+                </div>
+                <div class="contacts__map" data-aos="fade-up">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.355302385412!2d73.28208937731624!3d55.036990172827515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43ab006dd60a66df%3A0x623b79e4ff8a891f!2z0JzQsNCz0LjRgdGC0YDQsNC70YzQvdCw0Y8g0YPQuy4sIDE4LCDQntC80YHQuiwg0J7QvNGB0LrQsNGPINC-0LHQuy4sIDY0NDA4OA!5e0!3m2!1sru!2sru!4v1687978508268!5m2!1sru!2sru"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contacts__seo">
+                    <p>© "СибДезСервис". Все права защищены.
+                        Ижбалдин Владимир Сергеевич, ИНН: 550113948095,почта: SibDezServis@yandex.ru</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__row_logo">
+                    <img src="img/whitelogo.svg" alt="">
+                    <p>Юр.адрес 644088г. <br>
+                        Омск ул.Магистральная д.18
+                    </p>
+                </div>
+                <div class="footer__row_menu">
+                    <ul>
+                        <li><a href="#main">ГЛАВНАЯ</a></li>
+                        <li><a href="#road">НАШИ НАПРАВЛЕНИЯ</a></li>
+                        <li><a href="#services">СТОИМОСТЬ УСЛУГ</a></li>
+                        <li><a href="#krut">ПРЕИМУЩЕСТВА</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#fq">ЧАСТЫЕ ВОПРОСЫ</a></li>
+                        <li><a href="#rev">ОТЗЫВЫ</a></li>
+                        <li><a href="#contact">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__row_contacts">
+                    <a href="#"><img src="img/telwhite.svg" alt="">+7 (904) 324-26-38</a>
+                    <a href="#"><img src="img/mailwhite.svg" alt="">SibDezServis@yandex.ru</a>
+                    <a href="#"><img src="img/loctwhite.svg" alt="">г.Омск ул.Магистральная д.18</a>
+                    <a href="#"><img src="img/timewhite.svg" alt="">Круглосуточно</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup-vis">
+
+        <div class="popup-container">
+            <div class="bg"></div>
+            <div class="popup">
+                <div class="popup__form">
+                    <div class="popup-exit">
+                        <a href="#"><img src="img/close.png" alt=""></a>
+                    </div>
+                    <form class="SendMail" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="С блока" value="Форма обратной связи">
+                        <h3>Рассчитать стоимость</h3>
+                        <label for="">Введите имя:</label>
+                        <input type="text" onkeypress="noDigits(event)" name="Имя" placeholder="Имя" required>
+                        <label for="">Введите телефон:</label>
+                        <input type="phones" name="телефон" placeholder="Телефон" id="input-phone"
+                            data-phone-pattern="+7 (___) ___-__-__" required />
+                        <p>Нажимая кнопку «Отправить», вы соглашаетесь с услугами по обработке данных</p>
+                        <button class="btnyellowwhite">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="alertPopup">
+        Заявка успешно отправлена
+    </div>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.reviews__slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+
+                {
+                    breakpoint: 1023,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <!-- slick -->
+    <script src="js/popup.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/script.js"></script>
+    <!-- маска -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="inputmask.min.js"></script>
+    <script>
+        var selector = document.querySelector("input[type='phone']")
+        var im = new Inputmask("+7 (999)-999-99-99");
+
+ im.mask(selector);
+        
+        var selectors = document.querySelector("input[type='phones']")
+        im.mask(selectors);
+var selectorss = document.querySelector("input[type='phoness']")
+
+
+        im.mask(selectorss);
+  
+        new JustValidate('#form', {
+            rules: {
+                name: {
+                    required: true,
+                    minLength: 2,
+                    maxLength: 10
+                },
+                tel: {
+                    required: true,
+                    function: (name, value) => {
+                        const phone = selector.inputmask.unmaskedvalue()
+                        return Number(phone) && phone.length === 10
+                    }
+                },
+
+            },
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="inputmask.js"></script>
+ <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+</body>
+
+</html>
